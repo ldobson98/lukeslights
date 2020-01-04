@@ -1,0 +1,140 @@
+﻿.nav-subheader {
+	background-color: #2980b9;
+}
+
+.wrap .nav {
+	display: flex;
+}
+
+.nav-subheader ul.nav.sep1of4 li{
+	width:21.25%;margin-right:5%;margin-left:0;float:left;
+	text-align:center; text-transform:uppercase;
+	margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-subheader ul.nav.sep1of4 li:last-of-type {
+	margin-right:0;
+}
+
+.nav-subheader ul.nav.sep1of4 li a {
+	text-decoration:none;
+}
+
+.dates h3 a, .dates h2 a {
+	text-decoration:none;
+}
+
+.dates h3:hover a, .dates h2:hover a {
+	text-decoration:none;
+	color:inherit;
+}
+
+.dates h3:active a, .dates h2:active a{
+	text-decoration:none;
+	color:inherit;
+}
+
+ul.intro {
+	font-size:125%;
+}
+
+ul.intro li{
+	font-weight:300;
+}
+
+.calendar td {
+	vertical-align:top;
+}
+
+.calendar td .day {
+	float:right;
+	margin: 2px;
+    min-width: 19px;
+    padding: 6px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height:1px;
+}
+
+.calendar td {
+	height:100px;
+}
+
+.calendar table th, .donations table tr:nth-child(even), .donations table tr:nth-child(odd) {
+	background-color:transparent;
+}
+
+.calendar table th, .times table th {
+	background-color:rgba(255,255,255,.8);
+	color:#696969;
+	width:14.285714285%;
+}
+
+.calendar table, .calendar th, .calendar td {
+	border: 1px solid white;
+}
+
+.calendar .step1, .times .step1 {
+	background-color:rgba(255,255,255,.05);
+}
+
+.calendar .step2, .times .step2 {
+	background-color:rgba(255,255,255,.2);
+}
+
+.calendar .step3, .times .step3 {
+	background-color:rgba(255,255,255,.4);
+}
+.calendar .step4, .times .step4 {
+	background-color:rgba(255,255,255,.6);
+}
+
+.col1of2.weighted {
+	width:70%;
+}
+
+.col1of2.last-col.weighted {
+	width:25%;
+}
+
+@media (max-width:1025px) {
+	.col1of2.weighted, .col1of2.last-col.weighted {
+	width:100%;
+	float:none;
+}
+
+	.calendar td {
+	height:auto;
+}
+}
+
+@media (max-width:805px) {
+	.nav-subheader ul.nav.sep1of4 li {
+	width:100%;
+	margin-right:0;
+	padding:10px;
+}
+}
+
+.times table td {
+	width:33%;
+	height:auto;
+	/*padding:3px;*/
+	padding:0px;
+}
+
+.legend .fill-in {
+	padding:15px;
+	margin:10px 0;
+}
+
+.legend .fill-in.step1 {
+	background-color:rgba(255,255,255,.15)
+}
+
+.legend .fill-in.step3 {
+	background-color:rgba(255,255,255,.7);
+}
+
