@@ -6,7 +6,7 @@
       <span class="icon-bar"></span>
     </button>
     <div class="badge">
-      <a href="/">
+      <a href="{{ "/" | relative_url }}">
         <div class="badge-inner">
           <div>10</div>
           <div>Years</div>
@@ -14,14 +14,14 @@
       </a>
     </div>
     <div class="logo">
-      <a href="/" title="Return to the homepage.">
+      <a href="{{ "/" | relative_url }}" title="Return to the homepage.">
         <h1><b>Luke's Lights</b></h1>
       </a>
     </div>
     <div class="navigation">
       <div class="navigation-menu collapse" style="height:0px;">
         <ul>
-          <li class="CURRENT"><a href="{{ "home.html" | relative_url }}">Home</a></li>
+          <li class="CURRENT"><a href="{{ "/" | relative_url }}">Home</a></li>
           <!--<li><a href="dates.html">Info</a></li>-->
           <li><a href="{{ "about_us.html" | relative_url }}">About Us</a></li>
           <li class="dropdown-menu"><a href="{{ "videos/videos.html" | relative_url }}">Archives</a>
