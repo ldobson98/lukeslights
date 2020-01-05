@@ -23,7 +23,7 @@ email: lukeslightsnh@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Luke's Lights Christmas Display in New Hampshire has more than 8500 Christmas lights synchronized to music.  Check out the fun!
 baseurl: "" # the subpath of your site, e.g. /blog 
-url: "https://ldobson98.github.io/lukeslights/" # the base hostname & protocol for your site, e.g. //example.com
+url: "http://lukeslightsnh.com/" # the base hostname & protocol for your site, e.g. //example.com
 twitter_username: lukeslightsnh
 github_username:  ldobson98
 
