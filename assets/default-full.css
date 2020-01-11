@@ -505,7 +505,7 @@ h4 {
 
 .navigation-menu ul ul {
     width: 170px;
-    position: fixed;
+    position: absolute;
     z-index: 10000;
     height: 0;
     overflow: hidden;
