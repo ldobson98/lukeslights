@@ -885,8 +885,7 @@ h4.warning:after {
 }
 
 .footer {
-    border-top: 1px solid gray;
-    background-color: #111
+    border-top: 3px solid gray;
 }
 
 .about p.video-txt {
@@ -945,40 +944,8 @@ h4.warning:after {
 .footer .soc-icon {
     width: 48px;
     height: 48px;
-    text-indent: -9999px;
-    border-radius: 5px;
     margin-bottom: 10px;
-    background-repeat: no-repeat;
-    background-image: url(images/footer-social-icons.png)
-}
-
-.footer .facebook {
-    background-color: #3b5998;
-    background-position: -10px -10px
-}
-
-.footer .twitter {
-    background-color: #00aced;
-    background-position: -10px -78px
-}
-
-.footer .instagram {
-    background-color: #3f729b;
-    background-position: -10px -146px
-}
-
-.footer .youtube {
-    background-color: #cd332d;
-    background-position: -10px -214px
-}
-
-.footer .vimeo {
-    background-color: #4bf;
-    background-position: -10px -282px
-}
-
-.footer .soc-icon:hover {
-    opacity: .6
+    font-size:32px;
 }
 
 .footer h6 {
@@ -1621,18 +1588,6 @@ ul.alt-border li:nth-child(even) {
     }
     .sec-header.header-picture {
         background: #000
-    }
-}
-
-@media (min--moz-device-pixel-ratio:1.5),
-(-o-min-device-pixel-ratio:3/2),
-(-webkit-min-device-pixel-ratio:1.5),
-(min-device-pixel-ratio:1.5),
-(min-resolution:144dpi),
-(min-resolution:1.5dppx) {
-    .footer .soc-icon {
-        background-image: url(images/footer-social-icons@100.png);
-        background-size: 68px 340px
     }
 }
 

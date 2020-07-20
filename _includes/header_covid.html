@@ -1,0 +1,41 @@
+<div class="header">
+  <div class="wrap">
+    <button type="button" class="navigation-toggle" data-toggle="collapse" data-target=".navigation-menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="badge">
+      <a href="{{ "/" | relative_url }}">
+        <div class="badge-inner">
+          <div>10</div>
+          <div>Years</div>
+        </div>
+      </a>
+    </div>
+    <div class="logo">
+      <a href="{{ "/" | relative_url }}" title="Return to the homepage.">
+        <h1><b>Luke's Lights</b></h1>
+      </a>
+    </div>
+    <div class="navigation">
+      <div class="navigation-menu collapse" style="height:0px;">
+        <ul>
+          <li class="CURRENT"><a href="{{ "/" | relative_url }}">Home</a></li>
+          <li><a href="{{ "dates_spring.html" | relative_url }}">Info</a></li>
+          <li><a href="{{ "about_us.html" | relative_url }}">About Us</a></li>
+          <li class="dropdown-menu"><a href="{{ "videos/videos.html" | relative_url }}">Archives</a>
+            <ul>
+              <li><a href="{{ "videos/2019.html" | relative_url }}">2019</a></li>
+              <li><a href="{{ "videos/2018.html" | relative_url }}">2018</a></li>
+              <li><a href="{{ "videos/2017.html" | relative_url }}">2017</a></li>
+              <li><a href="{{ "videos/2016.html" | relative_url }}">2016</a></li>
+              <li><a href="{{ "videos/videos.html" | relative_url }}">Older</a></li>
+            </ul>
+          </li>
+          <li><a href="{{ "contact_us.html" | relative_url }}">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
