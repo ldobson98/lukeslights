@@ -619,9 +619,14 @@ h4 {
     font-size: 25px
 }
 
+.iconrow {
+    text-align: center;
+    margin-bottom: 20px
+}
+
 .iconrow i {
     font-size:48px;
-    padding:10px;
+    padding:0 20px;
 }
 
 .poll-section h2,
@@ -1319,6 +1324,10 @@ ul.alt-border li:nth-child(even) {
     .city-hall .info-box.hours {
         margin: 0;
         position: absolute
+    }
+
+    .about .right {
+        margin-bottom: 20px
     }
 }
 
