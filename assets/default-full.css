@@ -1329,6 +1329,10 @@ ul.alt-border li:nth-child(even) {
     .about .right {
         margin-bottom: 20px
     }
+
+    .iconrow i {
+        padding: 0 5px;
+    }
 }
 
 @media (max-width:1025px) {
