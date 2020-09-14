@@ -638,7 +638,7 @@ h4 {
     text-align: center;
 }
 
-.buttonrow a {
+.buttonrow a:not(:last-child) {
     margin-right:20px;
 }
 
@@ -1684,7 +1684,8 @@ ul.alt-border li:nth-child(even) {
 @media (max-width:500px) {
     #email,
     #firstname,
-    #lastname {
+    #lastname,
+    .cognito .submit {
         display: block;
         width: 100%
     }
