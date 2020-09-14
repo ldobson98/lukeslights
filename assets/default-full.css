@@ -1685,12 +1685,16 @@ ul.alt-border li:nth-child(even) {
     #email,
     #firstname,
     #lastname,
-    .cognito .submit {
+    .cognito .button {
         display: block;
         width: 100%
     }
     #firstname {
         margin-bottom: 10px
+    }
+
+    .cognito .button {
+        margin-left: 0;
     }
 }
 
