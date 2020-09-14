@@ -621,12 +621,16 @@ h4 {
 
 .iconrow {
     text-align: center;
-    margin-bottom: 20px
+    margin-bottom: 20px;
     font-size:48px;
 }
 
 .iconrow i {
     padding:0 20px;
+}
+
+.buttonrow {
+    margin: 20px 0;
 }
 
 .poll-section h2,
@@ -1616,9 +1620,16 @@ ul.alt-border li:nth-child(even) {
 .button {
     border: 0;
     padding: 10px;
-    margin-left: 154px;
     font-size: 80%;
-    cursor: pointer
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.cognito .button {
+    margin-left:154px;
 }
 
 #email {
