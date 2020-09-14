@@ -631,6 +631,11 @@ h4 {
 
 .buttonrow {
     margin: 20px 0;
+    text-align: center;
+}
+
+.buttonrow a {
+    margin-right:20px;
 }
 
 .poll-section h2,
@@ -1626,6 +1631,11 @@ ul.alt-border li:nth-child(even) {
     color: black;
     text-decoration: none;
     font-weight: normal;
+}
+
+.button:hover {
+    text-decoration: none;
+    color:black;
 }
 
 .cognito .button {
