@@ -1332,6 +1332,7 @@ ul.alt-border li:nth-child(even) {
 
     .iconrow i {
         padding: 0 5px;
+        font-size: 32px;
     }
 }
 
