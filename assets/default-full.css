@@ -1628,6 +1628,7 @@ ul.alt-border li:nth-child(even) {
 
 .button {
     border: 2px solid white;
+    border-radius:0;
     padding: 10px 20px;
     font-size: 80%;
     cursor: pointer;
