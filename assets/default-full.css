@@ -799,6 +799,7 @@ h4.warning:after {
 .section.pif i {
     font-size: 32px;
     justify-self: center;
+    padding-left: 20px;
 }
 
 .grid {
@@ -815,8 +816,9 @@ h4.warning:after {
     width:100%;
 }
 
-.section.pif .buttoncontainer {
+.section.pif p {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .poll-section {
