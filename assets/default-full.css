@@ -779,6 +779,11 @@ h4.warning:after {
     overflow: hidden!important
 }
 
+.section.pif {
+    background: url(images/PIF-cover.JPG) center top no-repeat #000;
+    background-size: cover
+}
+
 .poll-section {
     background: url(images/poll-cover-FINAL.JPG) center top no-repeat #000;
     background-size: cover
