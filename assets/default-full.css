@@ -796,6 +796,7 @@ h4.warning:after {
     display: flex;
     justify-content: center;
     align-items: center;
+    width:100%;
 }
 
 .poll-section {
