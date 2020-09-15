@@ -796,10 +796,16 @@ h4.warning:after {
     margin-bottom: 20px;
 }
 
+.section.pif i {
+    font-size: 32px;
+    justify-self: center;
+}
+
 .grid {
     display: grid;
     grid-gap: 50px;
     grid-template-columns: 1fr auto;
+    align-items: center;
 }
 
 .buttoncontainer {
