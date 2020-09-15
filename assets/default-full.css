@@ -792,14 +792,6 @@ h4.warning:after {
     margin-bottom: 20px;
 }
 
-.stat span:before {
-    content:"";
-    width:20px;
-    height:5px;
-    background-color: white;
-    
-}
-
 .poll-section {
     background: url(images/poll-cover-FINAL.JPG) center top no-repeat #000;
     background-size: cover
