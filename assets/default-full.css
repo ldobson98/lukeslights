@@ -796,6 +796,12 @@ h4.warning:after {
     margin-bottom: 20px;
 }
 
+.grid {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr auto;
+}
+
 .buttoncontainer {
     display: flex;
     justify-content: center;
