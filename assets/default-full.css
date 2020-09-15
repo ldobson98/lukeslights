@@ -792,6 +792,12 @@ h4.warning:after {
     margin-bottom: 20px;
 }
 
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .poll-section {
     background: url(images/poll-cover-FINAL.JPG) center top no-repeat #000;
     background-size: cover
@@ -1650,6 +1656,7 @@ ul.alt-border li:nth-child(even) {
     text-decoration: none;
     font-weight: 600;
     transition: all .5s;
+    display: inline-block;
     -webkit-appearance: none;
 }
 
