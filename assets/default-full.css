@@ -429,6 +429,10 @@ h4 {
     font-size: 40px
 }
 
+.history-section p {
+    margin-bottom: 20px;
+}
+
 .navigation {
     font-size: 15px;
     font-family: inherit;
@@ -1081,6 +1085,10 @@ ul.alt-border li:nth-child(even) {
 .videos iframe {
     clear: both;
     margin-bottom: 20px
+}
+
+.videos .col1of2.last-col iframe {
+    float:right;
 }
 
 .videos.vimeo iframe {
