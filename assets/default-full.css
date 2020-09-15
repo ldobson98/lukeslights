@@ -780,7 +780,7 @@ h4.warning:after {
 }
 
 .section.pif {
-    background: url(images/PIF-cover.jpg) center middle no-repeat #000;
+    background: url(images/PIF-cover.jpg) center no-repeat #000;
     background-size: cover
 }
 
