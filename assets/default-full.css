@@ -1679,6 +1679,10 @@ ul.alt-border li:nth-child(even) {
     margin-left:154px;
 }
 
+input {
+    font-family:inherit;
+}
+
 #email {
     width: 250px;
     border: 0;
