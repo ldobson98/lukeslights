@@ -144,7 +144,7 @@ function updateCharitable(xml) {
     var x = xmlDoc.getElementsByTagName('gs:cell')[0];
     var y = x.childNodes[0];
     document.getElementById("pif-charitable").innerHTML =
-    y.nodeValue; 
+    y.nodeValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
 }
 </script>
 <script type="text/javascript">
@@ -162,7 +162,7 @@ function updateFood(xml) {
     var x = xmlDoc.getElementsByTagName('gs:cell')[0];
     var y = x.childNodes[0];
     document.getElementById("pif-food").innerHTML =
-    y.nodeValue; 
+    y.nodeValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
 }
 </script>
 <script type="text/javascript">
@@ -180,6 +180,6 @@ function updateAOK(xml) {
     var x = xmlDoc.getElementsByTagName('gs:cell')[0];
     var y = x.childNodes[0];
     document.getElementById("pif-aok").innerHTML =
-    y.nodeValue; 
+    y.nodeValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
 }
 </script>
