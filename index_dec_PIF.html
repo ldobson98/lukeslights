@@ -55,15 +55,15 @@ title: Home
     <h2>Pay It Forward</h2>
     <div class="statrow">
       <div class="stat col1of3">
-        <h3>$X,XXX</h3>
+        <h3>$<span id="pif-charitable">0</span></h3>
         <span>donated to local charities</span>
       </div>
       <div class="stat col1of3">
-        <h3>X,XXX lbs</h3>
+        <h3><span id="pif-food">0</span> lbs</h3>
         <span>donated to local food collections</span>
       </div>
       <div class="stat col1of3 last-col">
-        <h3>X,XXX</h3>
+        <h3><span id="pif-aok">0</span></h3>
         <span>acts of kindness performed</span>
       </div>
     </div>
@@ -129,3 +129,57 @@ title: Home
     </div>
   </div>
 <!-- </a> -->
+<script type="text/javascript">
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R1C2", true);
+xhttp.send();
+
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName('gs:cell')[0];
+    var y = x.childNodes[0];
+    document.getElementById("pif-charitable").innerHTML =
+    y.nodeValue; 
+}
+</script>
+<script type="text/javascript">
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R2C2", true);
+xhttp.send();
+
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName('gs:cell')[0];
+    var y = x.childNodes[0];
+    document.getElementById("pif-food").innerHTML =
+    y.nodeValue; 
+}
+</script>
+<script type="text/javascript">
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R3C2", true);
+xhttp.send();
+
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName('gs:cell')[0];
+    var y = x.childNodes[0];
+    document.getElementById("pif-aok").innerHTML =
+    y.nodeValue; 
+}
+</script>
