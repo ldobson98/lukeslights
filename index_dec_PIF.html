@@ -133,13 +133,13 @@ title: Home
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
+        updateCharitable(this);
     }
 };
 xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R1C2", true);
 xhttp.send();
 
-function myFunction(xml) {
+function updateCharitable(xml) {
     var xmlDoc = xml.responseXML;
     var x = xmlDoc.getElementsByTagName('gs:cell')[0];
     var y = x.childNodes[0];
@@ -151,13 +151,13 @@ function myFunction(xml) {
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
+        updateFood(this);
     }
 };
 xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R2C2", true);
 xhttp.send();
 
-function myFunction(xml) {
+function updateFood(xml) {
     var xmlDoc = xml.responseXML;
     var x = xmlDoc.getElementsByTagName('gs:cell')[0];
     var y = x.childNodes[0];
@@ -169,13 +169,13 @@ function myFunction(xml) {
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
+        updateAOK(this);
     }
 };
 xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R3C2", true);
 xhttp.send();
 
-function myFunction(xml) {
+function updateAOK(xml) {
     var xmlDoc = xml.responseXML;
     var x = xmlDoc.getElementsByTagName('gs:cell')[0];
     var y = x.childNodes[0];

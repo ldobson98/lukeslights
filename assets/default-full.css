@@ -795,6 +795,10 @@ h4.warning:after {
     margin-bottom: 20px;
 }
 
+.statrow span {
+    font-weight: 600!important;
+}
+
 .section.pif i {
     font-size: 32px;
     justify-self: center;
