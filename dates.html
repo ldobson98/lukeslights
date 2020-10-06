@@ -7,7 +7,8 @@ title: Information
 	<div class="wrap">
 		<ul class="nav sep1of4">
 			<li><a href="#sec1">Dates of Operation</a></li>
-			<li><a href="#sec2">Food Pantry Information</a></li>
+			<!-- <li><a href="#sec2">Food Pantry Information</a></li> -->
+			<li><a href="#sec2">Pay It Forward Information</a></li>
 			<li><a href="#sec3">Song List</a></li>
 			<li><a href="#sec4">Rules &amp; Regulations</a></li>
 		</ul>
@@ -260,11 +261,43 @@ title: Information
 	</div>
 	</div>
 </div>
-<div class="wrap dates">
+<!-- <div class="wrap dates">
 	<h3><a name="sec2">Food Pantry Information</a></h3>
 	<p>Since 2012, we have collected non-perishable food items for the St. Joseph's Food Pantry.  We encourage you to drop off a canned good in the bin located at the bottom of the driveway
 	during show hours.  Thanks for helping us reach our goal.</p>
+</div> -->
+<div class="section pif">
+  <div class="wrap dates">
+    <h3><a name="sec2">Pay It Forward</a></h3>
+    <div class="statrow">
+      <div class="stat col1of3">
+        <h3>$<span id="pif-charitable">0</span></h3>
+        <span>donated to local charities</span>
+      </div>
+      <div class="stat col1of3">
+        <h3><span id="pif-food">0</span> lbs</h3>
+        <span>donated to local food collections</span>
+      </div>
+      <div class="stat col1of3 last-col">
+        <h3><span id="pif-aok">0</span></h3>
+        <span>acts of kindness performed</span>
+      </div>
+    </div>
+    <p>Each year, Luke's Lights organizes a project for viewers to give back to our local community.  In previous years, we have sponsored a food drive; this year, our campaign is <em>Pay It Forward</em>, a low-to-no-cost activity with many ways to participate.</p>
+    <div class="grid">
+      <i class="fas fa-money-bill"></i>
+      <div><b>Monetary donation:</b> donate to a 501(c)(3) non-profit organization this holiday season.</div>
+      <i class="fas fa-utensils"></i>
+      <div><b>Food drive donation:</b> donate to your local food pantry or a food drive in December. <em>Please note: Luke's Lights will not be collecting food on property in 2020.</em></div>
+      <i class="fas fa-heart"></i>
+      <div><b>Act of kindness:</b> spread positivity in the community this winter by performing acts of kindness (e.g. holding the door open for someone, paying for the next person's coffee in the drive-thru, or volunteering time with a non-profit).</div>
+    </div>
+    <div class="buttonrow">
+      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSeo_FZm2W_NWs2kBejy74cTiMX-i49Mq7zTlFk1Cju4vphP_w/viewform" target="_blank">Log your Pay It Forward activities</a>
+    </div>
+  </div>
 </div>
+
 <div class="wrap dates">
 	<h3><a name="sec3">Song List</a></h3>
 	<!--<p>Below is a list of songs, in the order in which they're played.</p>-->
@@ -299,3 +332,58 @@ title: Information
 				<a href="https://www.facebook.com/pages/Lukes-Lights/283917108313844" target="_blank">post on our Facebook page!</a>  After you've seen the show, please take the poll on our <a href="/">home page</a> to tell us which song you liked the most!</li>
 	</ul>
 </div>
+
+<script type="text/javascript">
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        updateCharitable(this);
+    }
+};
+xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R1C2", true);
+xhttp.send();
+
+function updateCharitable(xml) {
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName('gs:cell')[0];
+    var y = x.childNodes[0];
+    document.getElementById("pif-charitable").innerHTML =
+    y.nodeValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
+}
+</script>
+<script type="text/javascript">
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        updateFood(this);
+    }
+};
+xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R2C2", true);
+xhttp.send();
+
+function updateFood(xml) {
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName('gs:cell')[0];
+    var y = x.childNodes[0];
+    document.getElementById("pif-food").innerHTML =
+    y.nodeValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
+}
+</script>
+<script type="text/javascript">
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        updateAOK(this);
+    }
+};
+xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R3C2", true);
+xhttp.send();
+
+function updateAOK(xml) {
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName('gs:cell')[0];
+    var y = x.childNodes[0];
+    document.getElementById("pif-aok").innerHTML =
+    y.nodeValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
+}
+</script>
