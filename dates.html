@@ -269,20 +269,6 @@ title: Information
 <div class="section pif">
   <div class="wrap dates">
     <h3><a name="sec2">Pay It Forward</a></h3>
-    <div class="statrow">
-      <div class="stat col1of3">
-        <h3>$<span id="pif-charitable">0</span></h3>
-        <span>donated to local charities</span>
-      </div>
-      <div class="stat col1of3">
-        <h3><span id="pif-food">0</span> lbs</h3>
-        <span>donated to local food collections</span>
-      </div>
-      <div class="stat col1of3 last-col">
-        <h3><span id="pif-aok">0</span></h3>
-        <span>acts of kindness performed</span>
-      </div>
-    </div>
     <p>Each year, Luke's Lights organizes a project for viewers to give back to our local community.  In previous years, we have sponsored a food drive; this year, our campaign is <em>Pay It Forward</em>, a low-to-no-cost activity with many ways to participate.</p>
     <div class="grid">
       <i class="fas fa-money-bill"></i>
@@ -297,7 +283,6 @@ title: Information
     </div>
   </div>
 </div>
-
 <div class="wrap dates">
 	<h3><a name="sec3">Song List</a></h3>
 	<!--<p>Below is a list of songs, in the order in which they're played.</p>-->
@@ -318,72 +303,19 @@ title: Information
 </div>
 <div class="wrap dates">
 	<h3><a name="sec4">Rules &amp; Regulations</a></h3>
-	<p>We have the following rules, and we'd greatly appreciate your assistance in following them.  Thank you!</p>
+	<p>As always, the safety of viewers and our neighbors is our highest priority.  This year, as a result of the global health crisis, we ask that <em>at all times, viewers keep their windows up, doors closed, and watch the show from inside their cars</em> by tuning their radios to 106.9 FM.</p>
+	<p>Additionally, we have the following rules, and we'd greatly appreciate your assistance in following them.  Thank you!</p>
 	<ul>
-				<li>Do not beep your horn.</li>
-				<li>If you plan on staying for some time, please turn off your engine.  Bring blankets; it gets cold!</li>
-				<li>Don't litter!  We ask you not to litter because it may cause an electrical problem.</li>
-				<li><b>Be considerate of our neighbors. </b>  Please do not turn around in our neighbors driveways.  Our neighborhood consists of two cul-de-sacs, as well as two entrance and exit points.  
-				Keep going, turning left or right, and you'll eventually find your way out.</li>
-				<li>Turn off your lights.  I know some cars can't, however, if you know your can, please do so if you plan on pulling over to watch the show.</li>
-				<li>If you happen to have any non-expired and non-perishable food items that you would be willing to donate, please bring them with you.  We will have a
-				collection box for the <a href="//www.assumptiondovernh.org/index.php?option=com_content&view=article&id=177&Itemid=198" target="_blank">St. Joseph's Food Pantry</a>.</li>
-				<li>And lastly, ENJOY THE SHOW!  When seeing the show, feel free to <a href="https://twitter.com/LukesLightsNH" target="_blank">tweet us</a> or 
+				<li><em><u>Do not block or turn around in our neighbors' driveways.</u></em> Our considerate neighbors allow us to continue this show each year, and we want to keep them happy!</li>
+				<li><em>Keep one lane open for other cars to pass.</em> We must prioritize neighborhood traffic.</li>
+				<li><em>Move as far forward as possible when there is traffic behind you.</em> This maximizes how many people can view our show at once, which keeps traffic flowing and prevents us from needing to shorten the show.
+				<li><em>Do not beep your horn.</em></li>
+				<li><em>Do not litter.</em> Littering can cause an electrical problem.</li>
+				<li><em>Consider turning off your lights.</em> Not all cars can; however, if yours can, please turn them off for a more immersive experience.</li>
+				<li><em>Consider turning off your engine if you plan on staying for an extended period of time.</em> Bring blankets; it gets cold!</li>
+				<!-- <li>If you happen to have any non-expired and non-perishable food items that you would be willing to donate, please bring them with you.  We will have a
+				collection box for the <a href="//www.assumptiondovernh.org/index.php?option=com_content&view=article&id=177&Itemid=198" target="_blank">St. Joseph's Food Pantry</a>.</li> -->
+				<li><em>And lastly, enjoy the show!</em> When seeing the show, feel free to <a href="https://twitter.com/LukesLightsNH" target="_blank">tweet us</a> or 
 				<a href="https://www.facebook.com/pages/Lukes-Lights/283917108313844" target="_blank">post on our Facebook page!</a>  After you've seen the show, please take the poll on our <a href="/">home page</a> to tell us which song you liked the most!</li>
 	</ul>
 </div>
-
-<script type="text/javascript">
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        updateCharitable(this);
-    }
-};
-xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R1C2", true);
-xhttp.send();
-
-function updateCharitable(xml) {
-    var xmlDoc = xml.responseXML;
-    var x = xmlDoc.getElementsByTagName('gs:cell')[0];
-    var y = x.childNodes[0];
-    document.getElementById("pif-charitable").innerHTML =
-    y.nodeValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
-}
-</script>
-<script type="text/javascript">
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        updateFood(this);
-    }
-};
-xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R2C2", true);
-xhttp.send();
-
-function updateFood(xml) {
-    var xmlDoc = xml.responseXML;
-    var x = xmlDoc.getElementsByTagName('gs:cell')[0];
-    var y = x.childNodes[0];
-    document.getElementById("pif-food").innerHTML =
-    y.nodeValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
-}
-</script>
-<script type="text/javascript">
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        updateAOK(this);
-    }
-};
-xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1WIDA3OZ65ON64HNdArLRYPjiI9gwFp1qS9M0Pg12nK0/2/public/full/R3C2", true);
-xhttp.send();
-
-function updateAOK(xml) {
-    var xmlDoc = xml.responseXML;
-    var x = xmlDoc.getElementsByTagName('gs:cell')[0];
-    var y = x.childNodes[0];
-    document.getElementById("pif-aok").innerHTML =
-    y.nodeValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
-}
-</script>
