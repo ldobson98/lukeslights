@@ -782,6 +782,10 @@ h4.warning:after {
     font-size: 32px;
 }
 
+.warning-perm p {
+    margin:0;
+}
+
 .videos.section {
     background-color: #16a287
 }
@@ -818,13 +822,11 @@ h4.warning:after {
 .section.pif i {
     font-size: 32px;
     justify-self: center;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 
 .section.pif .grid {
     display: grid;
-    grid-column-gap: 0px;
+    grid-column-gap: 15px;
     grid-row-gap: 15px;
     grid-template-columns: 1fr auto;
     align-items: center;
