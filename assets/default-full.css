@@ -783,7 +783,7 @@ h4.warning:after {
 }
 
 .warning-perm p {
-    margin:0;
+    margin:0!important;
 }
 
 .videos.section {
