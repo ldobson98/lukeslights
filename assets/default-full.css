@@ -860,7 +860,7 @@ h4.warning:after {
 }
 
 .history-section {
-    background: url(images/history-section_hero-FINAL.jpg) center top no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1) ), url(images/history-section_hero-FINAL.jpg) center top no-repeat;
     background-size: cover
 }
 
