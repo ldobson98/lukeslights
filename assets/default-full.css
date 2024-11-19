@@ -1127,9 +1127,12 @@ ul.alt-border li:nth-child(even) {
     margin-bottom: 10px
 }
 
+.videos p {
+    margin-bottom: 20px
+
 .videos iframe {
     clear: both;
-    margin-bottom: 20px
+/*     margin-bottom: 20px */
 }
 
 .videos .col1of2.last-col iframe {
