@@ -3,7 +3,7 @@ layout: noHeader
 title: Home
 ---
 
-<div class="jumbotron section">
+<div class="jumbotron section lights-on">
   <div class="wrap">
 			<div class="col1of3 col2of3">
 				<h2>A Christmas <span>spectacular</span>!</h2>
@@ -105,21 +105,18 @@ title: Home
   </div>
 </a>
 
-<script type="text/javascript">
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        updateFoodCount(this);
+<script>
+    async function fetchSheetData() {
+      const url = 'https://script.google.com/macros/s/AKfycbxbIHdUFM3iJl2OowNiVf7MPNF9d0FNzRXomR44QTcAYoIj1ASoIq2X56Q5T9yhvxg8/exec'; // Replace with your Web App URL
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Network response was not ok');
+        const text = await response.text();
+        document.getElementById('gdoc-food-count').textContent = text;
+      } catch (error) {
+        console.error('Error fetching sheet data:', error);
+      }
     }
-};
-xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1KglsbsJ7XArLIOwKKcw87IN4tGGEyjiBvJZRZ7Qfj_c/2/public/full/R1C2", true);
-xhttp.send();
 
-function updateFoodCount(xml) {
-    var xmlDoc = xml.responseXML;
-    var x = xmlDoc.getElementsByTagName('gs:cell')[0];
-    var y = x.childNodes[0];
-    document.getElementById("gdoc-food-count").innerHTML =
-    y.nodeValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
-}
-</script>
+    fetchSheetData();
+  </script>
