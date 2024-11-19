@@ -1129,6 +1129,7 @@ ul.alt-border li:nth-child(even) {
 
 .videos p {
     margin-bottom: 20px
+}
 
 .videos iframe {
     clear: both;
@@ -1137,6 +1138,10 @@ ul.alt-border li:nth-child(even) {
 
 .videos .col1of2.last-col iframe {
     float:right;
+}
+
+.videos .col1of2.last-col {
+    text-align:right;
 }
 
 .videos.vimeo iframe {
