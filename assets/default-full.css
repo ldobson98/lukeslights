@@ -658,7 +658,7 @@ h4.warning {
     font-size: 45px
 }
 
-.jumbotron.lights-on .update h3 span {
+.jumbotron.lights-on .update h3 span.units {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     position: relative;
@@ -670,7 +670,7 @@ h4.warning {
     font-size: 25px
 }
 
-.jumbotron.lights-on .update h3.goal-num span {
+.jumbotron.lights-on .update h3.goal-num span.units {
     font-size: 15px
 }
 
