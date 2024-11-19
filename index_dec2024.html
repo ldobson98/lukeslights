@@ -13,7 +13,7 @@ title: Home
 			<link href="http://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet" type="text/css">
 				<div class="update">
 					<h2 class="total">Total Donations:</h2>
-					<h3 class="total-num">0<span>&nbsp;lbs</span></h3>
+					<h3 class="total-num"><span id="gdoc-food-count">0</span><span>&nbsp;lbs</span></h3>
 					<h2 class="goal">Goal:</h2>
 					<h3 class="goal-num">4000<span>&nbsp;lbs</span></h3>
 					<p>All donations go directly to the <a href="http://www.assumptiondovernh.org/index.php?option=com_content&amp;view=article&amp;id=177&amp;Itemid=198" target="_blank">St. Joseph's Food Pantry</a>. Food Drive collection powered by Dover High School National Honor Society.&nbsp;
@@ -104,3 +104,22 @@ title: Home
     </div>
   </div>
 </a>
+
+<script type="text/javascript">
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        updateFoodCount(this);
+    }
+};
+xhttp.open("GET", "https://spreadsheets.google.com/feeds/cells/1KglsbsJ7XArLIOwKKcw87IN4tGGEyjiBvJZRZ7Qfj_c/2/public/full/R1C2", true);
+xhttp.send();
+
+function updateFoodCount(xml) {
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName('gs:cell')[0];
+    var y = x.childNodes[0];
+    document.getElementById("gdoc-food-count").innerHTML =
+    y.nodeValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); 
+}
+</script>
