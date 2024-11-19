@@ -106,17 +106,17 @@ title: Home
 </a>
 
 <script>
-    async function fetchSheetData() {
-      const url = 'https://script.google.com/macros/s/AKfycbxbIHdUFM3iJl2OowNiVf7MPNF9d0FNzRXomR44QTcAYoIj1ASoIq2X56Q5T9yhvxg8/exec'; // Replace with your Web App URL
-      try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error('Network response was not ok');
-        const text = await response.text();
-        document.getElementById('gdoc-food-count').textContent = text;
-      } catch (error) {
-        console.error('Error fetching sheet data:', error);
-      }
+  async function fetchSheetData() {
+    const url = 'https://script.google.com/macros/s/AKfycbyb77rhxwqLDHZduTL7YmXCLFnbbNzlPeE0EK_GdlG67GwB6OMk3A643tlriBfLGbSuKw/exec'; // Replace with your Web App URL
+    try {
+      const response = await fetch(url, { mode: 'cors' }); // Explicitly set CORS mode
+      if (!response.ok) throw new Error('Network response was not ok');
+      const data = await response.json();
+      document.getElementById('gdoc-food-count').textContent = data.data;
+    } catch (error) {
+      console.error('Error fetching sheet data:', error);
     }
+  }
 
-    fetchSheetData();
-  </script>
+  fetchSheetData();
+</script>
