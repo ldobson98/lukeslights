@@ -774,7 +774,7 @@ h4.warning:after {
     display: grid;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr;
     align-items: center;
 }
 
