@@ -584,9 +584,15 @@ h4 {
 .jumbotron {
     height: 500px;
     width: 100%;
-    background: url(images/2016home-cover-FINAL.jpg) center center no-repeat fixed #000;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/2024hero.png) no-repeat center center fixed #000;
+    background-size: contain;
+    -webkit-background-size: contain
+}
+
+@media (max-aspect-ratio: 458/255) {
+  .jumbotron { 
     background-size: cover;
-    -webkit-background-size: cover
+    -webkit-background-size: cover; }
 }
 
 .jumbotron .wrap {
