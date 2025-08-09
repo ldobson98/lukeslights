@@ -584,12 +584,12 @@ h4 {
 .jumbotron {
     height: 500px;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/2024hero.png) no-repeat center center fixed #000;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/2024hero.png) no-repeat top center fixed #000;
     background-size: contain;
     -webkit-background-size: contain
 }
 
-@media (max-aspect-ratio: 458/255) {
+@media (max-width: 1123px) {
   .jumbotron { 
     background-size: cover;
     -webkit-background-size: cover; }
@@ -1417,7 +1417,7 @@ ul.alt-border li:nth-child(even) {
         padding-top: 150px
     }
     .jumbotron {
-        background-size: auto 900px;
+       /* background-size: auto 900px;*/
         background-attachment: scroll
     }
     .jumbotron.lights-on .col1of3>h2 {
