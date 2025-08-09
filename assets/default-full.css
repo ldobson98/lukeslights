@@ -1557,7 +1557,7 @@ ul.alt-border li:nth-child(even) {
         margin-bottom: -20px
     }
     .jumbotron {
-        background-image: url(images/2024hero-small.jpg)
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/2024hero-small.jpg)
     }
     .jumbotron.lights-on {
         height: auto;
